@@ -9,5 +9,5 @@ branchConfigs:
           releaseName: foo
           namespace: external-secrets #optional
           valueFiles:
-          - deploy/charts/external-secrets/values.yaml
+          - values.yaml
       outputPath: render
