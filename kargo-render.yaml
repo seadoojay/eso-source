@@ -1,0 +1,13 @@
+configVersion: v1alpha1
+branchConfigs:
+- name: env/test
+  appConfigs:
+    foo:
+      configManagement:
+        path: deploy/charts/external-secrets
+        helm:
+          releaseName: foo
+          namespace: external-secrets #optional
+          valueFiles:
+          - deploy/charts/external-secrets/values.yaml
+      outputPath: render
